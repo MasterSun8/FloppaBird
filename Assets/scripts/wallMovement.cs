@@ -10,8 +10,8 @@ public class wallMovement : MonoBehaviour
     void Start()
     {
         gameObject.tag = "Wall";
+        position = transform.position;
         if(!isPoint){
-            position = transform.position;
             if(position.y < 0){
                 position.y = Random.Range(-3.5f, -6.0f);
             }else{

@@ -75,7 +75,6 @@ public class floppaMovement : MonoBehaviour{
         }else if(other.name == "Score"){
             scr++;
             Points.text = Convert.ToString(scr, 10);
-            Debug.Log("point");
         }else{
             dead = true;
         }
